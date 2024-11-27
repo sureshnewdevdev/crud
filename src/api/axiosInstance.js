@@ -1,8 +1,18 @@
 import axios from "axios";
 
 // Create an Axios instance
+// local
+// const axiosInstance = axios.create({
+//   baseURL: "https://localhost:7233/api", // Replace with your API's base URL
+//   timeout: 10000, // Optional: Set a timeout for requests (10 seconds)
+//   headers: {
+//     "Content-Type": "application/json", // Default headers for requests
+//   },
+// });
+
+// Deployed code at real time
 const axiosInstance = axios.create({
-  baseURL: "https://localhost:7233/api", // Replace with your API's base URL
+  baseURL: " https://webapplication120241127085146.azurewebsites.net/api", // Replace with your API's base URL
   timeout: 10000, // Optional: Set a timeout for requests (10 seconds)
   headers: {
     "Content-Type": "application/json", // Default headers for requests
