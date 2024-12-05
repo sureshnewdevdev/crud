@@ -11,6 +11,9 @@ function App() {
       // Save to localStorage
       localStorage.setItem("username", username);
       localStorage.setItem("password", password);
+      localStorage.setItem("Role", "Admin");
+      localStorage.setItem("Region", "SouthAsia");
+      localStorage.setItem("LoginTime",new Date().toLocaleTimeString())
 
       // Set authentication state
       setIsAuthenticated(true);
@@ -24,6 +27,7 @@ function App() {
       isAuthenticated ? (
         <Welcome />
       ) : (
+        //setup --1
         <Login onLogin={handleLogin} />
         )
 }</div>)
