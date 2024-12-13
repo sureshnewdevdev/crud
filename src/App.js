@@ -50,6 +50,11 @@ const App = () => {
     try {
       const response = await axios.get(`${apiBaseUrl}/GetToken`);
       
+      // await axios.post(`${apiBaseUrl}/validate`, {
+      //   username: "Ram",
+      //   password: "JaiKrishna",
+      // });
+
       // Log the entire response to check the structure
       console.log("API Response:", response.data);
   
